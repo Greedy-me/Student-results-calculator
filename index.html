@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Score Table</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student Score Sheet</h1>
+      <p class="subtitle">
+        Enter scores for CA 1, CA 2, CA 3 and Exam. Total and Grade update
+        automatically.
+      </p>
+
+      <table id="scoreTable">
+        <thead>
+          <tr>
+            <th>Student</th>
+            <th>CA 1</th>
+            <th>CA 2</th>
+            <th>CA 3</th>
+            <th>Exam</th>
+            <th>Total</th>
+            <th>Grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-student="1">
+            <td>Student 1</td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="20"
+                class="score-input ca1"
+                placeholder="0-20"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="20"
+                class="score-input ca2"
+                placeholder="0-20"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="20"
+                class="score-input ca3"
+                placeholder="0-20"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="40"
+                class="score-input exam"
+                placeholder="0-40"
+              />
+            </td>
+            <td class="total">0</td>
+            <td class="grade">-</td>
+          </tr>
+          <tr data-student="2">
+            <td>Student 2</td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="20"
+                class="score-input ca1"
+                placeholder="0-20"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="20"
+                class="score-input ca2"
+                placeholder="0-20"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="20"
+                class="score-input ca3"
+                placeholder="0-20"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="40"
+                class="score-input exam"
+                placeholder="0-40"
+              />
+            </td>
+            <td class="total">0</td>
+            <td class="grade">-</td>
+          </tr>
+          <tr data-student="3">
+            <td>Student 3</td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="20"
+                class="score-input ca1"
+                placeholder="0-20"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="20"
+                class="score-input ca2"
+                placeholder="0-20"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="20"
+                class="score-input ca3"
+                placeholder="0-20"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="40"
+                class="score-input exam"
+                placeholder="0-40"
+              />
+            </td>
+            <td class="total">0</td>
+            <td class="grade">-</td>
+          </tr>
+          <tr data-student="4">
+            <td>Student 4</td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="20"
+                class="score-input ca1"
+                placeholder="0-20"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="20"
+                class="score-input ca2"
+                placeholder="0-20"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="20"
+                class="score-input ca3"
+                placeholder="0-20"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="40"
+                class="score-input exam"
+                placeholder="0-40"
+              />
+            </td>
+            <td class="total">0</td>
+            <td class="grade">-</td>
+          </tr>
+          <tr data-student="5">
+            <td>Student 5</td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="20"
+                class="score-input ca1"
+                placeholder="0-20"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="20"
+                class="score-input ca2"
+                placeholder="0-20"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="20"
+                class="score-input ca3"
+                placeholder="0-20"
+              />
+            </td>
+            <td>
+              <input
+                type="number"
+                min="0"
+                max="40"
+                class="score-input exam"
+                placeholder="0-40"
+              />
+            </td>
+            <td class="total">0</td>
+            <td class="grade">-</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="note">
+        <strong>Grading Scale:</strong> A (70–100) | B (60–69) | C (50–59) | D
+        (45–49) | E (40–44) | F (0–39)<br />
+        Max scores: CA1/CA2/CA3 = 20 each, Exam = 40 (Total out of 100)
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

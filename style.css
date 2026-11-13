@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    padding: 30px 15px;
+    color: #333;
+}
+
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.25);
+    padding: 30px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e3c72;
+    margin-bottom: 8px;
+    font-size: 1.9rem;
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #1e3c72;
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4f7fb;
+}
+
+tbody tr:hover {
+    background-color: #e8f0fe;
+}
+
+td:first-child {
+    font-weight: 600;
+    text-align: left;
+    padding-left: 15px;
+    color: #1e3c72;
+}
+
+input.score-input {
+    width: 70px;
+    padding: 8px 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input.score-input:focus {
+    outline: none;
+    border-color: #2a5298;
+    box-shadow: 0 0 0 3px rgba(42, 82, 152, 0.2);
+}
+
+.total {
+    font-weight: 700;
+    color: #1e3c72;
+    font-size: 1.05rem;
+}
+
+.grade {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.grade.A { color: #28a745; }
+.grade.B { color: #17a2b8; }
+.grade.C { color: #ffc107; }
+.grade.D { color: #fd7e14; }
+.grade.E { color: #e83e8c; }
+.grade.F { color: #dc3545; }
+
+.note {
+    background: #f0f4f8;
+    border-left: 4px solid #2a5298;
+    padding: 12px 15px;
+    font-size: 0.9rem;
+    color: #444;
+    border-radius: 0 6px 6px 0;
+}
+
+@media (max-width: 700px) {
+    .container {
+        padding: 20px 12px;
+    }
+
+    th, td {
+        padding: 8px 4px;
+        font-size: 0.85rem;
+    }
+
+    input.score-input {
+        width: 55px;
+        padding: 6px 3px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
